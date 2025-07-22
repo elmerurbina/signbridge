@@ -1,0 +1,11 @@
+# Ignore virtual environment
+.venv/
+env/
+__pycache__/
+
+# Ignore big files
+*.pkl
+*.h5
+*.zip
+*.mp4
+*.jpg
