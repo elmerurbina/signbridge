@@ -1,59 +1,62 @@
-# 🖐 Detector de Lengua de Señas
+# 🖐 Sign Language Detector
 
-Este proyecto es un **detector de lengua de señas** que combina visión por computadora y reconocimiento de voz para facilitar la comunicación entre personas con discapacidad auditiva y oyentes.
-
----
-
-## 📚 Descripción
-
-El programa tiene **dos marcos principales (frames)**, representando dos caras de la moneda:
-
-✅ **Para la persona con discapacidad auditiva (persona especial):**  
-Utilizando la webcam, el sistema reconoce la seña que realiza y traduce a qué letra o expresión corresponde.
-
-✅ **Para la persona oyente (persona normal):**  
-Mediante reconocimiento de voz, el sistema detecta lo que la persona dice y muestra en pantalla una imagen con la seña correspondiente, permitiendo que la persona especial comprenda el mensaje.
+This project is a **sign language detector** that combines computer vision and voice recognition to facilitate communication between people with hearing impairments and hearing individuals.
 
 ---
 
-## 🎯 Objetivo
+## 📚 Description
 
-Este proyecto se presentará el **10 de mayo** en la **Feria de Matemáticas** de la **Universidad Nacional de Ingeniería (UNI), Centro Regional Juigalpa**.  
-El propósito es demostrar que las matemáticas son fundamentales para el desarrollo de la inteligencia artificial, y que estos conocimientos pueden aplicarse en la vida real para resolver problemas complejos y generar un impacto positivo en la sociedad.
+The program has **two main frames**, representing two sides of the conversation:
 
----
+✅ **For the person with hearing impairment (special person):**  
+Using a webcam, the system recognizes the performed sign and translates it into the corresponding letter or expression.
 
-## ⚙️ Cómo funciona
-
-El proyecto se desarrolla en **varias etapas** mediante diferentes scripts:
-
-1️⃣ **Recolección de imágenes**  
-Archivo: `collect_imgs.py`  
-👉 Toma 100 fotos por cada letra del abecedario o expresión, usando la cámara.
-
-2️⃣ **Creación del dataset**  
-Archivo: `create_dataset.py`  
-👉 A partir de las imágenes recolectadas, crea un dataset que servirá como base de información para entrenar el modelo.
-
-3️⃣ **Entrenamiento del modelo**  
-Archivo: `train_inference.py`  
-👉 Usa los archivos `.pickle` generados en la etapa anterior para entrenar el modelo y generar el archivo final del modelo.
-
-4️⃣ **Clasificación en tiempo real**  
-Archivo: `inference_classifier.py`  
-👉 Usa el modelo entrenado para reconocer el lenguaje de señas captado por la webcam.
-
-5️⃣ **Reconocimiento de voz**  
-Archivo: `speech_to_sign.py`  
-👉 Reconoce frases habladas y muestra en pantalla la imagen de la seña correspondiente.
-
-6️⃣ **Integración de ambos mundos**  
-Archivo: `unified_frames.py`  
-👉 Unifica los dos sistemas en dos marcos verticales, permitiendo que la persona normal y la persona especial puedan comunicarse de forma efectiva y fluida.
+✅ **For the hearing person (normal person):**  
+Through voice recognition, the system detects what the person says and displays an image of the corresponding sign, allowing the special person to understand the message.
 
 ---
 
-## 🛠 Tecnologías utilizadas
+## 🎯 Purpose
+
+This project was presented at the **Math Fair** of the **National University of Engineering (UNI), Juigalpa Regional Center** on **May 10, 2025**.  
+Now it is part of the **#ForTheLoveOfCode** hackathon organized by **GitHub**.
+
+Its goal is to demonstrate how mathematics is essential to the development of artificial intelligence, and how this knowledge can be applied to solve real-world problems and generate a positive impact in society.  
+We aim to implement this project to address **real-world challenges** and improve inclusive communication.
+
+---
+
+## ⚙️ How it works
+
+The project is developed in **several stages** through different scripts:
+
+1️⃣ **Image Collection**  
+File: `collect_imgs.py`  
+👉 Captures 100 photos for each letter of the alphabet or expression using the camera.
+
+2️⃣ **Dataset Creation**  
+File: `create_dataset.py`  
+👉 Creates a dataset from the collected images to serve as a training base for the model.
+
+3️⃣ **Model Training**  
+File: `train_inference.py`  
+👉 Uses `.pickle` files generated in the previous step to train the model and produce the final model file.
+
+4️⃣ **Real-Time Classification**  
+File: `inference_classifier.py`  
+👉 Uses the trained model to recognize sign language captured by the webcam.
+
+5️⃣ **Voice Recognition**  
+File: `speech_to_sign.py`  
+👉 Recognizes spoken phrases and displays the corresponding sign image on screen.
+
+6️⃣ **Integration of Both Worlds**  
+File: `unified_frames.py`  
+👉 Merges both systems into two vertical frames, allowing the hearing and hearing-impaired persons to communicate effectively and fluidly.
+
+---
+
+## 🛠 Technologies Used
 
 - [MediaPipe](https://mediapipe.dev/)  
 - [OpenCV](https://opencv.org/)  
@@ -63,20 +66,23 @@ Archivo: `unified_frames.py`
 
 ---
 
-## 🚀 Futuro
+## 🚀 Future Vision
 
-Se planea integrar este sistema en una plataforma web accesible para cualquier persona, ampliando su alcance y generando aún más impacto social.
-
----
-
-## 📸 Ejemplo visual
-
-![Ejemplo del sistema en uso](README_Ejemplo.png)
+We plan to integrate this system into a web platform accessible to anyone, expanding its reach and increasing its social impact.
 
 ---
 
-## 💡 Créditos
+## 📸 Visual Example
 
-Proyecto desarrollado por [NicaDevs](https://github.com/NicaDevs) para la Feria de Matemáticas 2025.  
-Contribuciones de: Elmer Urbina y Holman Rugama.
+![System Example in Use](README_Ejemplo.png)
 
+---
+
+## 💡 Credits
+
+Project developed by [NicaDevs](https://github.com/NicaDevs) for the 2025 Math Fair.  
+Contributions by: Elmer Urbina and Holman Rugama.
+
+---
+
+### ✨ #ForTheLoveOfCode
