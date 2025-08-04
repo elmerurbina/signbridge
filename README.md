@@ -1,4 +1,14 @@
 # 🖐 Sign Language Detector
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-FF6F00?style=flat-square&logo=websocket&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-00C853?style=flat-square&logo=google&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C2D91?style=flat-square&logo=opencv&logoColor=white)
+![sounddevice](https://img.shields.io/badge/sounddevice-FFC107?style=flat-square)
+![SpeechRecognition](https://img.shields.io/badge/SpeechRecognition-03A9F4?style=flat-square)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![pickle](https://img.shields.io/badge/pickle-9E9E9E?style=flat-square)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
 This project is a **sign language detector** that combines computer vision and voice recognition to facilitate communication between people with hearing impairments and hearing individuals.
 
