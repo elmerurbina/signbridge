@@ -83,7 +83,7 @@ export default function App() {
         <section className="mb-5">
           <h2>{lang === 'en' ? 'Demo' : 'Demostración'}</h2>
           <div className="demo-photos d-flex flex-wrap gap-3">
-            <img src="/assets/demo.jpeg" alt="Demo 1" />
+            <img src="/assets/demo.jpg" alt="Demo 1" />
             <img src="/assets/demo_index.png" alt="Demo 2" />
           </div>
         </section>
