@@ -1,0 +1,137 @@
+
+/* Color Palette */
+:root {
+  --deep-blue: #2E5A88;       /* Trust, communication */
+  --soft-teal: #4AB8B8;       /* Calmness, inclusivity */
+  --warm-gray: #6D6D6D;       /* Neutral text */
+  --light-beige: #F5F0E6;     /* Soft background */
+  --gentle-orange: #FF9A56;   /* Buttons and highlights */
+  --success-green: #5CB85C;   /* Confirmations */
+  --alert-red: #D9534F;       /* Errors and warnings */
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+/* Reset some defaults */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-beige);
+  color: var(--warm-gray);
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--deep-blue);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: var(--warm-gray);
+}
+
+/* Container */
+.container {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+/* Overview box */
+.overview-box {
+  background-color: var(--white);
+  border-left: 5px solid var(--soft-teal);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: var(--deep-blue);
+}
+
+/* Form controls */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: var(--deep-blue);
+}
+
+select.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--soft-teal);
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--warm-gray);
+  background-color: var(--white);
+  transition: border-color 0.3s ease;
+}
+
+select.form-control:focus {
+  border-color: var(--gentle-orange);
+  outline: none;
+}
+
+/* Buttons */
+.btn-highlight {
+  background-color: var(--gentle-orange);
+  border: none;
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+}
+
+.btn-highlight:hover,
+.btn-highlight:focus {
+  background-color: #e37e3c; /* Slightly darker orange */
+  outline: none;
+}
+
+/* Alerts */
+.alert {
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.alert-success {
+  background-color: var(--success-green);
+  color: var(--white);
+}
+
+.alert-danger {
+  background-color: var(--alert-red);
+  color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0.75rem;
+  }
+}
