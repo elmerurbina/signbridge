@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 
 const content = {
   en: {
-    overview: `SignBridge is an innovative platform that connects the deaf and hearing communities through real-time sign language recognition and intelligent interpretation tools.`,
+     overview: `SignBridge is an innovative platform that connects the deaf and hearing communities through real-time sign language recognition and intelligent interpretation tools. Designed for web, mobile, and video conferencing platforms, it empowers inclusive communication anywhere.`,
     functionalities: [
       "AI-powered real-time sign language recognition",
       "Instant speech-to-sign translation",
@@ -17,7 +17,7 @@ const content = {
     startMessage: "Coming soon — the future of inclusive communication is near!"
   },
   es: {
-    overview: `SignBridge es una plataforma innovadora que conecta a las comunidades sordas y oyentes mediante el reconocimiento en tiempo real del lenguaje de señas y herramientas inteligentes de interpretación.`,
+     overview: `SignBridge es una plataforma innovadora que conecta a las comunidades sordas y oyentes mediante el reconocimiento en tiempo real del lenguaje de señas y herramientas inteligentes de interpretación. Diseñada para la web, móviles y plataformas de videoconferencia, permite una comunicación inclusiva en cualquier lugar.`,
     functionalities: [
       "Reconocimiento en tiempo real del lenguaje de señas impulsado por IA",
       "Traducción instantánea de voz a señas",
