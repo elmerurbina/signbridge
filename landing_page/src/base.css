@@ -115,6 +115,48 @@ ul {
   color: var(--warm-gray);
 }
 
+header {
+  background-color: var(--gentle-orange); /* Color cálido que contraste bien con azul y negro */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+header img {
+  height: 50px;
+  /* Opcional: un pequeño margen derecho */
+  margin-right: 1rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header nav button,
+header nav select {
+  background-color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+  color: var(--deep-blue);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header nav button:hover,
+header nav select:hover,
+header nav button:focus,
+header nav select:focus {
+  background-color: #ffb37a; /* un naranja más claro para hover */
+  outline: none;
+}
+
+
 /* Responsive */
 @media (max-width: 576px) {
   .team-photos img,
