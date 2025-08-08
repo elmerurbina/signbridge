@@ -57,17 +57,17 @@ ul {
 
 .team-photos img,
 .demo-photos img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
+  width: 350px;
+  height: auto;          /* Let height adjust to keep aspect ratio */
+  max-height: 350px;     /* Max height limit */
+  object-fit: contain;   /* Show full image without cropping */
   margin-right: 1rem;
   border-radius: 8px;
+  background-color: var(--light-beige); /* subtle background */
+  border: 1px solid #ddd;                /* subtle border */
+  padding: 5px;                         /* optional padding */
 }
 
-.team-photos {
-  display: flex;
-  margin-bottom: 0.5rem;
-}
 
 .team-note {
   font-style: italic;
