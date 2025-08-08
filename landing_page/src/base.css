@@ -1,0 +1,126 @@
+/* Use your existing color palette and resets */
+:root {
+  --deep-blue: #2E5A88;
+  --soft-teal: #4AB8B8;
+  --warm-gray: #6D6D6D;
+  --light-beige: #F5F0E6;
+  --gentle-orange: #FF9A56;
+  --success-green: #5CB85C;
+  --alert-red: #D9534F;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+body, html {
+  margin: 0; padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-beige);
+  color: var(--warm-gray);
+  min-height: 100vh;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+h1, h2, h3 {
+  color: var(--deep-blue);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.overview-box {
+  background: var(--white);
+  border-left: 5px solid var(--soft-teal);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: var(--deep-blue);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--warm-gray);
+}
+
+.team-photos img,
+.demo-photos img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+
+.team-photos {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.team-note {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--warm-gray);
+}
+
+.btn-highlight {
+  background-color: var(--gentle-orange);
+  border: none;
+  color: var(--white);
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.btn-highlight:hover,
+.btn-highlight:focus {
+  background-color: #e37e3c;
+  outline: none;
+}
+
+.alert-success {
+  background-color: var(--success-green);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 1rem;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: var(--light-beige);
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: var(--warm-gray);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .team-photos img,
+  .demo-photos img {
+    width: 90px;
+    height: 90px;
+    margin-right: 0.5rem;
+  }
+}
