@@ -1,33 +1,37 @@
-// frontend/src/index.jsx
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './base.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './components/Footer'; // Import from components
 
 function App() {
   const [meetingCode, setMeetingCode] = useState('');
   const [language, setLanguage] = useState('en');
   const [signLanguage, setSignLanguage] = useState('asl');
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   const createMeeting = async () => {
     try {
+      setIsButtonClicked(true);
       const res = await fetch('http://localhost:8000/api/create-meeting/', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ language, sign_language: signLanguage })
+        body: JSON.stringify({ language, sign_language: signLanguage }),
       });
       const data = await res.json();
       setMeetingCode(data.code);
     } catch (err) {
       alert('Failed to create meeting');
+    } finally {
+      setTimeout(() => setIsButtonClicked(false), 200); // Reset after animation
     }
   };
 
   return (
-    <div className="container mt-5">
-      <div className="text-center">
+    <div className="main-wrapper">
+      <div className="container mt-5 text-center">
         <img
           src="/logo-transparent.png"
           alt="SignBridge Logo"
@@ -74,7 +78,10 @@ function App() {
           </select>
         </div>
 
-        <button className="btn btn-highlight mb-3" onClick={createMeeting}>
+        <button
+          className={`btn btn-highlight mb-5 ${isButtonClicked ? 'clicked' : ''}`}
+          onClick={createMeeting}
+        >
           Create Meeting
         </button>
 
@@ -84,6 +91,8 @@ function App() {
           </div>
         )}
       </div>
+
+      <Footer />
     </div>
   );
 }
