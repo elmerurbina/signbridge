@@ -14,8 +14,16 @@ const content = {
     vision: "To eliminate communication barriers and enable full inclusion through the power of technology.",
     mission: "To empower deaf and hearing individuals with seamless, intuitive, and inclusive communication tools.",
     teamNote: "This project was proudly presented on May 10 at the Mathematics Fair of the National University of Engineering.",
-    startMessage: "Coming soon — the future of inclusive communication is near!"
+    startMessage: "Coming soon — the future of inclusive communication is near!",
+
+    contactTitle: "Contact Us",
+    contactEmail: "Email us at:",
+    contactWhatsApp: "Chat with us on WhatsApp:",
+    email: "elmerurbina570@gmail.com",
+    whatsapp: "https://wa.me/50577966272"
+
   },
+
   es: {
      overview: `SignBridge es una plataforma innovadora que conecta a las comunidades sordas y oyentes mediante el reconocimiento en tiempo real del lenguaje de señas y herramientas inteligentes de interpretación. Diseñada para la web, móviles y plataformas de videoconferencia, permite una comunicación inclusiva en cualquier lugar.`,
     functionalities: [
@@ -27,8 +35,15 @@ const content = {
     vision: "Eliminar las barreras de comunicación y promover la inclusión total mediante la tecnología.",
     mission: "Empoderar a personas sordas y oyentes con herramientas de comunicación inclusivas, intuitivas y sin barreras.",
     teamNote: "Este proyecto fue presentado con orgullo el 10 de mayo en la Feria de Matemáticas de la Universidad Nacional de Ingeniería.",
-    startMessage: "¡Muy pronto! El futuro de la comunicación inclusiva está cerca."
+    startMessage: "¡Muy pronto! El futuro de la comunicación inclusiva está cerca.",
+    contactTitle: "Contáctanos",
+    contactEmail: "Envíanos un correo a:",
+    contactWhatsApp: "Chatea con nosotros por WhatsApp:",
+    email: "elmerurbina570@gmail.com",
+    whatsapp: "https://wa.me/1234567890"
   }
+
+
 };
 
 export default function App() {
@@ -101,6 +116,25 @@ export default function App() {
             <p className="alert alert-success">{t.startMessage}</p>
           )}
         </div>
+
+        {/* Contact Section */}
+<section className="mb-5">
+  <h2>{t.contactTitle}</h2>
+  <p>
+    <strong>{t.contactEmail}</strong>{' '}
+    <a href={`mailto:${t.email}`} style={{color: 'var(--deep-blue)'}}>
+      Escribenos un correo
+    </a>
+
+  </p>
+  <p>
+    <strong>{t.contactWhatsApp}</strong>{' '}
+    <a href={t.whatsapp} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--deep-blue)' }}>
+      WhatsApp
+    </a>
+  </p>
+</section>
+
       </main>
 
       <Footer />
